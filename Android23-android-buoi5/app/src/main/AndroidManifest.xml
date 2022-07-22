@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dungnd.android23">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Android23"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".buoi5.PhuongTrinhActivity"
+            android:exported="false" />
+        <activity
+            android:name=".buoi5.KotlinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".buoi4.RecycleViewMergeAdapterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".buoi4.RecycleViewGridActivity"
+            android:exported="false" />
+        <activity
+            android:name=".buoi4.RecycleViewHorizontalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recycleview.RecycleViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Buoi3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ConstrainLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RelaytiveLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LinelearActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FrameLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CodeFresherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
