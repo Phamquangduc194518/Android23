@@ -8,22 +8,22 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/edt2"
+        android:id="@+id/edt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="getdata"/>
+        android:hint="data"/>
     <TextView
-        android:id="@+id/tvView2"
+        android:id="@+id/tvView1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:hint="Hiển thị dữ liệu m2"/>
+        android:hint="Hiển thị dữ liệu m1"/>
 
     <Button
-        android:id="@+id/btClickBack"
+        android:id="@+id/btClick"
         android:layout_width="wrap_content"
-        android:text="Back"
+        android:text="Click"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         tools:ignore="MissingConstraints" />
