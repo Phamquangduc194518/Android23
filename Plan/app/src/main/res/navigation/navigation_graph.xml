@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/menuHome">
+
+    <fragment
+        android:id="@+id/menuWishList"
+        android:name="com.example.myapplication.MainActivity"
+        android:label="fragment_wish_list"
+        tools:layout="@layout/fragment_wish_list" >
+        <action
+            android:id="@+id/action_menuWishList_to_incomeFragment"
+            app:destination="@id/menuWallet" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuHome"
+        android:name="com.example.myapplication.ui.Fragment.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home_page">
+        <action
+            android:id="@+id/action_menuHome_to_menuWishList"
+            app:destination="@id/menuWishList" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuUser"
+        android:name="com.example.myapplication.ui.Fragment.UserFragment"
+        tools:layout="@layout/fragment_user"
+        android:label="UserFragment" />
+    <fragment
+        android:id="@+id/menuWallet"
+        android:name="com.example.myapplication.ui.Fragment.wallet.incomeFragment"
+        tools:layout="@layout/fragment_income_wallet"
+        android:label="incomeFragment" >
+        <action
+            android:id="@+id/action_incomeFragment_to_userFragment"
+            app:destination="@id/menuUser" />
+    </fragment>
+</navigation>
+
+<!--    app:destination="@id/menuWishList"-->
